@@ -1,0 +1,34 @@
+@import "colour";
+
+nav {
+  width: 100%;
+  padding: 1rem;
+  display: flex; //elements get horizontal
+  justify-content: space-between; // puts prop. on main axis (here main axis is x)
+  align-items: center;// puts prop. on cross axis 
+  position: sticky;// its stick on top of page and does not scroll
+  background-color: $first;
+  top: 0%;
+  z-index: 10;
+
+  > h1 {   //since h1 is direct child of nav so ca write like this.
+    text-transform: uppercase;
+  }
+
+  > main {
+    width: 70%;
+    display: flex;
+    justify-content: flex-end;
+    justify-content: space-between; 
+    
+
+    > Link {
+      color: $dark;
+      margin: 1rem;
+
+      &:hover {
+        color: $third;
+      }
+    }
+  }
+}
